@@ -1,0 +1,9 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav .navbar-nav .nav-item .dropdown-menu {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+---
+title: "About"
+format: html
+---
+
+
+
+I'm currently a Sophomore at Northwestern University studying Communication Studies (Digital Media: Behavior and Design), Data Science, and Human-Computer Interaction!
+
+I'm passionate about anything human-designed centered, including UX Design, Product Development, and HCI Research! 
+
+Contacts: 
+  - my email: hyoujijoo2027@u.northwestern.edu
+  - [LinkedIn](http://linkedin.com/in/hyouji-sally-joo-4710a72a7)
