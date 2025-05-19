@@ -16,8 +16,8 @@ Welcome! In this document, I will showcase various design projects, including po
 ## Overview
 
 ### **Assignment:** Educational Game Design for 8th Grade Biology Students   
-### ***Client:*** XYZ Company  
-### ***Tools Used:*** Canva, Google Sheets 
+##**Client:** XYZ Company  
+##**Tools Used:** Canva, Google Sheets 
 
 As part of our final project for Design of Learning Environments, our team spent several weeks planning out multiple prototypes for a physical game aimed at teaching 8th grade students cell biology, specifically cell organelles and functions. 
 
@@ -28,14 +28,14 @@ As part of our final project for Design of Learning Environments, our team spent
 - <p>Physical Card Design</p> 
 
 ### **Design Process**
-<p>1. **Research & Concept Development:**  </p>
-   (Image or graphic of initial sketches or mood boards)  
-Explored different educational subjects to determine the learning outcome our game will be centered around. Our team's final learning outcome was the following: 
+1. **Research & Concept Development:** 
+
+<p>Explored different educational subjects to determine the learning outcome our game will be centered around. Our team's final learning outcome was the following: </p>
 
 
 2. **Refinement & Iteration:**  
 
-Multiple playthroughs led to the development of 3 prototypes for the game. Each prototype expanded on a different aspect of the learning outcome that we could achieve better through manipulating different design elements. 
+<p>Multiple playthroughs led to the development of 3 prototypes for the game. Each prototype expanded on a different aspect of the learning outcome that we could achieve better through manipulating different design elements. </p>
 
 <details>
   <summary><strong><p>Showcase #1</p></strong></summary>

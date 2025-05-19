@@ -6,3 +6,9 @@
 /.quarto/
 
 projects/ppt/*.pdf
+
+
+_site/
+
+images/*.pdf
+
