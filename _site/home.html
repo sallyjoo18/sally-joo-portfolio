@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projects – Hyouji Joo's Portfolio</title>
+<title>Hyouji Joo’s Portfolio – My Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Portfolio Page</span>
+    <span class="navbar-title">My Portfolio</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./front_page.html"> 
+    <a class="nav-link active" href="./home.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -102,10 +102,6 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="./projects.html">
- <span class="dropdown-text">▶ Projects Home</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="./projects/coding.html">
  <span class="dropdown-text">Data Science</span></a>
   </li>  
@@ -117,12 +113,12 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./projects/graphic_design.html">
  <span class="dropdown-text">Graphic Design</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./projects/personal.html">
- <span class="dropdown-text">Personal</span></a>
-  </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./projects/personal.html"> 
+<span class="menu-text">Personal</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -136,118 +132,71 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<style>
-body {
-  font-family: "Times New Roman", Times, serif;
-  background-color: #000000;
-  text-align: center;
-  padding-top: 80px;
-}
-
-#main-message img {
-  height: 300px;
-}
-
-body {
-  background-image: url("images/note2.png");
-  background-size: cover;  
-  background-position: bottom;
-  background-repeat: no-repeat; 
-  margin: 0;
-  padding: 0;
-  font-family: "Times New Roman", Times, serif;
-}
-
-
-.footer {
-  margin-top: 60px;
-  padding: 20px;
-  background-color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-  border-top: 1px solid #ccc;
-}
-.footer a {
-  color: #004080;
-  text-decoration: none;
-  margin: 0 10px;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-</style>
-<div class="scatter-container">
-<p><a href="./projects/coding.html" class="scatter-btn">Coding</a> <a href="./projects/marketing.html" class="scatter-btn">Marketing</a> <a href="./projects/graphic_design.html" class="scatter-btn">Graphic Design</a> <a href="./projects/personal.html" class="scatter-btn">Personal</a></p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Hyouji Joo’s Portfolio</h1>
 </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-.scatter-container {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* fill screen */
-  overflow: hidden;
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ebeffe;
+  text-align: center;
+  padding-top: 40px;
+}
+h1 {
+  font-size: 48px;
+  color: #020202;
 }
 
-.scatter-btn {
-  width: 120px;
-  height: 100px;
-  background-image: url("images/folder2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  position: absolute;
+.tab {
   display: flex;
   justify-content: center;
-  align-items: center  
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
 }
-
-
-.scatter-btn:hover {
-  transform: scale(1.1);
-  background-color: #6f76a8;
+.tab button {
+  background-color: #f8c4da;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 4px;
+}
+.tab button:hover {
+  background-color: #f4a2c0;
+}
+.tabcontent {
+  display: none;
+  padding: 20px;
 }
 </style>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll('.scatter-btn');
-  const container = document.querySelector('.scatter-container');
-  const containerWidth = container.clientWidth;
-  const containerHeight = container.clientHeight;
-  const placedPositions = [];
-
-  buttons.forEach(button => {
-    let x, y, isOverlapping;
-
-    const buttonWidth = 120; // adjust if your button width differs
-    const buttonHeight = 50; // adjust for actual button height
-
-    do {
-      x = Math.random() * (containerWidth - buttonWidth);
-      y = Math.random() * (containerHeight * 0.6); // optional: bias upward
-      isOverlapping = placedPositions.some(pos => {
-        return (
-          Math.abs(pos.x - x) < buttonWidth + 10 &&
-          Math.abs(pos.y - y) < buttonHeight + 10
-        );
-      });
-    } while (isOverlapping);
-
-    placedPositions.push({ x, y });
-    button.style.left = `${x}px`;
-    button.style.top = `${y}px`;
-  });
-});
-</script>
-<footer class="footer">
-<a href="./about.html">About</a> | <a href="./front_page.html">Home</a> | <a href="mailto:hyoujijoo2027@u.northwestern.edu">Email</a> | <a href="http://linkedin.com/in/hyouji-sally-joo-4710a72a7" target="_blank">LinkedIn</a>
-</footer>
+<div id="main-message">
+<p><img src="images/logo.png"></p>
+</div>
+<div>
+<p><a href="about.html"> <img src="images/button-2.png" alt="About Page" class="button-img"> </a></p>
+<p><a href="projects.html"> <img src="images/button-1.png" alt="Projects Page" class="button-img"> </a></p>
+</div>
 <script>
 function openTab(evt, tabName) {
   var i, tabcontent;
@@ -258,6 +207,7 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
 }
 </script>
+
 
 
 

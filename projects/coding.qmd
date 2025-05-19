@@ -1,0 +1,136 @@
+---
+title: "Coding Works"
+format:
+  dashboard:
+    sidebar: false
+    theme: litera
+    css: style3.css
+    page-layout: 1-3
+
+---
+
+<style>
+  .card-container {
+    display: flex;
+    justify-content: space-between; them */
+  }
+
+  .card {
+    flex: 1 1 250px;
+    margin-bottom: 20px;            
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-sizing: border-box; 
+  }
+
+.side-by-side-tabs {
+    display: flex;
+    gap: 20px; /* spacing between tabs */
+  }
+
+  .tab-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+
+</style>
+
+## Portfolio Website {.panel}
+<p><Strong>Interactive Portfolio Website</Strong></p> 
+<div class="card-container">
+<p>Built a personal portfolio website using tools such as RStudio, `shiny` elements, as well as GitHub. 
+The initial task involved planning out the "brand guide" for the website (color palette, fonts, etc.), overall structure and layout, as well as what qmd tools to utilize within the different sections of the website. 
+</p>
+</div>
+
+<div class="card">
+<p><Strong> Brand Guide Examples: </Strong></p>
+<img src="images/logo.png" alt="Logo" style="width: 200px;">
+<img src="images/palette1.png" alt="Palette" style="width: 200px;">
+<img src="images/palette2.png" alt="Palette-2" style="width: 200px;">
+</div>
+
+
+
+
+
+## Animal Crossing Dashboard {.panel}
+<p><Strong>Animal Crossing Data Dashboard</Strong></p> 
+<div class="card-container">
+<p>Built a data dashboard using `shiny` tools to efficiently display data for collectible items/features/characters in the game Animal Crossing: New Horizons. 
+The project aimed to explore different data visualization methods and to gain insight on how to properly manipulate different elements such as palettes, navigation bars, search bars, as well as other page components provided through `shiny` and `Quarto`. </p>
+***This project is still a work in progress.***
+
+</div>
+
+<div class="card">
+
+
+
+<div class="tab-card">
+::: {.panel-tabset}
+
+### Data Set Information
+
+<p>The data set utilized for this project is <a href="https://www.kaggle.com/datasets/jessicali9530/animal-crossing-new-horizons-nookplaza-dataset">Animal Crossing New Horizons Catalog</a> from Kaggle.</p>
+
+<p>The following CSV files were used in the dashboard:</p>
+
+<details>
+<summary><p>Click to expand table of data fields</p></summary>
+<br>
+<p>
+  | Field                    |
+  |--------------------------|
+  | `Name`                  |
+  | `Variation`             |
+  | `DIY`                   |
+  | `Buy`                   |
+  | `Sell`                  |
+  | `Color 1`               |
+  | `Color 2`               |
+  | `Size`                  |
+  | `Miles Price`           |
+  | `Source`                |
+  | `Source Notes`          |
+  | `Seasonal Availability` |
+  | `Mannequin Piece`       |
+  | `Version`               |
+  | `Style`                 |
+  | `Label Themes`          |
+  | `Type`                  |    
+  | `Villager Equippable`   |
+  | `Catalog`               |
+  | `Filename`              |
+  | `Internal ID`           |
+  | `Unique Entry ID`       |
+</p>
+</details>
+
+
+### Visualization plan
+
+<p>For this project, I plan to implement Shiny tools and concepts to create my data visualization tool. </p>
+
+<p>Before creating my ui and server, I'll sort the different collectible item categories into the following larger categories: wardrobe items, household items, tools, villagers, and other. Based on this categorization, the inital plan is to create an interactive dashboard that allows for the user to switch between different tabs that represent each of the larger categories, and from each tab they're able to further look into specific items.</p> 
+
+<p>In addition, I plan to incorporate images for certain categories such as `Villagers` to better provide a visual image for the information displayed on the dashboard.</p> 
+:::
+</div>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+/* General Layout */
+html, body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ebeffe;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard Panels */
+.panel {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #003366;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* Project Card Container */
+.card-container {
+  display: flex;
+  gap: 10px;  /* Adds space between cards */
+  margin-top: 20px;
+  flex-wrap: nowrap;  /* Prevents wrapping and forces cards to stay in one row */
+}
+
+
+.card:hover {
+  transform: scale(1.05);  /* Slightly increase the hover scale */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #9097C0;
+}
+
+nav .navbar-nav .nav-item .dropdown-menu {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+nav, .navbar, .navbar-nav, .nav-item, .nav-link {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ccc;
+}
+
+.footer a {
+  color: #004080;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.bg-light {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}

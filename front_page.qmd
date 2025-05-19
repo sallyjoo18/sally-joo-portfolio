@@ -2,33 +2,35 @@
 title: ""
 format: html
 ---
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-  font-family: "Times New Roman", Times, serif;
-}
 
-/* Adjust height to leave space for footer */
-#main-message {
-  height: calc(100vh - 60px); /* adjust based on footer height */
-  width: 100vw;
-  overflow: hidden;
+<style>
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ebeffe;
+  text-align: center;
+  padding-top: 40px;
 }
 
 #main-message img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top; /* <-- Pushes image content toward top */
-  display: block;
+  height: 300px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.tabcontent {
+  display: none;
+  padding: 20px;
 }
 
 .footer {
-  width: 100%;
+  margin-top: 60px;
   padding: 20px;
-  background-color: #000000; /* semi-transparent white */
+  background-color: #ffffff;
   text-align: center;
   font-size: 14px;
   color: #333;
@@ -45,12 +47,13 @@ html, body {
 </style>
 
 <div id="main-message">
-  <img src="images/introduction.png" alt="Intro">
+  <img src="images/logo.png" alt="Logo">
 </div>
 
 <footer class="footer">
-  <a href="front_page.qmd">Home</a> |
+  <a href="about.qmd">About</a> |
   <a href="projects.qmd">Projects</a> |
   <a href="mailto:hyoujijoo2027@u.northwestern.edu">Email</a> |
   <a href="http://linkedin.com/in/hyouji-sally-joo-4710a72a7" target="_blank">LinkedIn</a>
 </footer>
+

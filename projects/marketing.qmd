@@ -1,6 +1,130 @@
 ---
-title: "marketing"
-format: html
+title: "Marketing Projects"
+format: 
+  dashboard:
+    sidebar: false
+    css: style3.css
+    page-layout: 1-1
 ---
+<style>
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1 1 250px;
+    margin-bottom: 20px;            
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-sizing: border-box; 
+  }
+
+  .side-by-side-tabs {
+    display: flex;
+    gap: 20px; /* space between tabs */
+    margin-bottom: 20px;
+  }
+
+  .tab-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tab-content {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .tab-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .active {
+    background-color: #ddd;
+  }
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ebeffe;
+  padding-top: 40px;
+}
+</style>
+
+**ISBE Mark**
+<p><strong>Animal Records Evanston Marketing Strategy</strong></p> 
+<div class="card-container">
+  <p>As an ISBE Mark project manager for the Animal Records Evanston client, my team and I spent several weeks finalizing a set of deliverables that would serve to increase the record store's visibility both in the local Evanston area and on social media platforms such as Instagram or Facebook.</p>
+  
+***This project is currently ongoing.***
+</div>
+
+::: {.panel-tabset}
+
+### Deliverable Prototype #1
+
+<div class="tab-card">
+<div class="tab-title" onclick="toggleContent(this)">
+<p>Video Planning & Social Media Management</p></div>
+
+<div class="tab-content">
+<p><strong>Assignment:</strong> Video planning for in-store display & social media content ideas</p>
+<p><strong>Basic Description:</strong> Planning out video content for in-store display promoting the record store and advertising the new basement expansion. The content should be replayed consistently throughout opening hours. Sound should not overlap with the store's music, focusing more on visual information.</p>
+<p><strong>Social Media:</strong> Create video content ideas for Animal Record’s official Instagram page.</p>
+</div>
+</div>
 
 
+<div class="tab-card">
+<div class="tab-title" onclick="toggleContent(this)">
+<p>Graphic Design & Social Media Management</p>
+</div>
+  
+<div class="tab-content">
+<p>The focuses of this deliverable were sticker redesign and social media content schedule. Because stickers are a great way to spread awareness of a store or brand, we decided that sticker designs that appeal to younger crowds are a cost-efficient way of increasing store awareness. Aligned with this focus on cost-efficiency, we also aimed to create a content posting schedule for the official Instagram page in order to making posting less overwhelming and easy to manage.</p>
+</div>
+</div>
+
+
+
+<div class="tab-card">
+<div class="tab-title" onclick="toggleContent(this)">
+<p>Event Planning, Marketing Research & Competitor Analysis</p>
+</div>
+  
+<div class="tab-content">
+<p><strong>Assignment:</strong> Vendor opportunity research & competitor analysis</p>
+
+<p><strong>Event Planning & Logistics:</strong> Research potential events for vinyl selling/purchasing at Norris or look for other vendor opportunities. Investigate room availability at Norris in late May/June and upcoming events where Animal Records could participate.</p>
+
+<p><strong>Marketing Research & Competitor Analysis:</strong> Research local vinyl stores near Northwestern to identify key characteristics of each competitor.</p>
+</div>
+</div>
+
+### Deliverable Prototype #2
+
+
+### Deliverable Prototype #3 
+:::
+
+
+<script>
+  function toggleContent(element) {
+    element.classList.toggle("active");
+
+  var content = element.nextElementSibling;
+
+  if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
+</script>

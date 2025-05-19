@@ -1,0 +1,113 @@
+---
+title: "Design Work"
+output: html_document
+format:
+  html:
+    toc: true  
+    css: style3.css  
+---
+ 
+Welcome! In this document, I will showcase various design projects, including poster designs, digital content. Below, you will find a collection of my work along with project descriptions.
+
+
+::: {.bg-light}
+# Project 1: Cell Defense Card Game
+
+## Overview
+
+### **Assignment:** Educational Game Design for 8th Grade Biology Students   
+### ***Client:*** XYZ Company  
+### ***Tools Used:*** Canva, Google Sheets 
+
+As part of our final project for Design of Learning Environments, our team spent several weeks planning out multiple prototypes for a physical game aimed at teaching 8th grade students cell biology, specifically cell organelles and functions. 
+
+### **Final Deliverables:**
+- <p>Game learning outcomes</p> 
+- <p>Learning measurements - how we know learning occurred</p> 
+- <p>Game Mechanics</p> 
+- <p>Physical Card Design</p> 
+
+### **Design Process**
+<p>1. **Research & Concept Development:**  </p>
+   (Image or graphic of initial sketches or mood boards)  
+Explored different educational subjects to determine the learning outcome our game will be centered around. Our team's final learning outcome was the following: 
+
+
+2. **Refinement & Iteration:**  
+
+Multiple playthroughs led to the development of 3 prototypes for the game. Each prototype expanded on a different aspect of the learning outcome that we could achieve better through manipulating different design elements. 
+
+<details>
+  <summary><strong><p>Showcase #1</p></strong></summary>
+  <iframe src="ppt/showcase_1.pdf" width="600" height="400"></iframe>
+</details>
+
+<details>
+  <summary><strong><p>Showcase #2</p></strong></summary>
+  <iframe src="ppt/showcase2.pdf" width="600" height="400"></iframe>
+</details>
+
+3. **Final Design:**  
+   ![Card Design](images/cell-cards.png) 
+   
+:::
+
+
+::: {.bg-light}
+# Project 2: Poster Design for ASA DataFest 2025 at Northwestern
+
+### **Assignment:** Create a series of promotional posters for ASA DataFest 2025 at Northwestern University. 
+**Tools Used:** Adobe InDesign, Photoshop, Canva
+
+Final Poster Designs: 
+
+<details>
+  <summary><strong><p>Participant Poster</p></strong></summary>
+  <p><img src="images/datafest_participant.png" alt="Poster 1" width="600px">
+  Promotional poster aimed at increasing participants. </p>
+</details>
+
+<details>
+  <summary><strong><p>Mentor Poster</p></strong></summary>
+  <p><img src="images/datafest_mentor.png" alt="Poster 1" width="600px">
+  Promotional poster aimed at encouraging mentor registration.  </p>
+</details>
+
+<details>
+  <summary><strong><p>Volunteer Poster</p></strong></summary>
+  <p><img src="images/datafest_volunteer.png" alt="Poster 1" width="600px">
+  Promotional poster aimed at increasing volunteer registration.  </p>
+</details>
+
+
+:::
+
+
+::: {.bg-light}
+
+# Project 3: Poster Designs for Block Cinema Film Events 
+
+## Overview
+
+### **Assignment:** Design promotional graphics for digital and physical usage for promoting upcoming film events. 
+**Client:** Block Cinema Program, guest filmmakers 
+**Tools Used:** Adobe InDesign, Photoshop, Canva 
+
+![Card Design](images/cell-cards.png) 
+
+:::
+
+::: {.bg-light}
+
+# Project 4: Magazine Template Design  
+
+## Overview
+
+### **Assignment:** Creating template designs for magazines that align with the magazine edition as well as article content. The following templates are from STITCH Fashion Magazine as well as Wavelength Magazine. 
+**Tools Used:** Adobe InDesign, Photoshop, Canva 
+
+![Card Design](images/cell-cards.png) 
+
+:::
+
+

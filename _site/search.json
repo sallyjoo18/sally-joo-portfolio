@@ -9,8 +9,85 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Hyouji Joo's Portfolio",
     "section": "",
-    "text": "I’m currently a Sophomore at Northwestern University studying Communication Studies (Digital Media: Behavior and Design), Data Science, and Human-Computer Interaction!\nI’m passionate about anything human-designed centered, including UX Design, Product Development, and HCI Research!\nContacts: - my email: hyoujijoo2027@u.northwestern.edu - LinkedIn"
+    "text": "Home | Projects | Email | LinkedIn"
+  },
+  {
+    "objectID": "front_page.html",
+    "href": "front_page.html",
+    "title": "Hyouji Joo's Portfolio",
+    "section": "",
+    "text": "About | Projects | Email | LinkedIn"
+  },
+  {
+    "objectID": "front_page.html#about",
+    "href": "front_page.html#about",
+    "title": "front_page",
+    "section": "About",
+    "text": "About\n\nChoose a Section to View!\n\nselectInput(\n  \"section\",\n  label = \"Choose a Section to View!\",\n  choices = c(\"Hello!\", \"Introduction\", \"Projects\", \"Other\"),\n  selected = \"Hello!\"\n)\n\n\nChoose a Section to View!\n\nHello!\nIntroduction\nProjects\nOther\n\n\n\n\n\nBuilt with Shiny\n\n\n\nui &lt;- page_sidebar(\n  theme = my_theme,\n  title = \"Hyouji Joo's Portfolio\",\n  sidebar = sidebar(\n    helpText(\"A brief introduction to myself and projects.\"),\n    selectInput(\n      \"section\",\n      label = \"Choose a Section to View!\",\n      choices = c(\"Hello!\", \"Introduction\", \"Projects\", \"Other\"),\n      selected = \"Hello!\"\n    ),\n    tags$a(\"Built with Shiny\", href = \"https://shiny.posit.co/\")\n  ),\n  card(uiOutput(\"main_content\"))\n)\n\nserver &lt;- function(input, output, session) {\n  project_view &lt;- reactiveVal(\"summary\")\n  design_view &lt;- reactiveVal(\"summary\")\n\n  observeEvent(input$back_to_projects, { project_view(\"summary\") })\n  observeEvent(input$go_to_marketing, { design_view(\"marketing\") })\n  observeEvent(input$go_to_graphic, { design_view(\"graphic design\") })\n  observeEvent(input$go_to_game, { design_view(\"game\") })\n  observeEvent(input$back_to_design, { design_view(\"summary\") })\n\n  output$main_content &lt;- renderUI({\n    switch(input$section,\n           \"Hello!\" = tagList(\n             card_header(\"Hello!\"),\n             p(\"My name is Hyouji (Sally) Joo.\")\n           ),\n           \"Introduction\" = layout_columns(\n             col_widths = c(8, 4),\n             card(\n               card_header(\"Introduction\"),\n               p(\"I'm currently a Sophomore at Northwestern University studying \\\n                 Communication Studies (Digital Media: Behavior and Design), Data \\\n                 Science, and Human-Computer Interaction!\"),\n               p(\"I'm passionate about anything human-centered, including \\\n                 UX Design, Product Development, and HCI Research!\")\n             ),\n             card(card_image(\"images/headshot1.jpg\", width = \"100%\"))\n           ),\n           \"Projects\" = {\n             if (project_view() == \"summary\") {\n               navset_tab(\n                 id = \"projects_main_tabs\",\n                 nav_panel(\"Technical Projects\", \n                           card(\n                             card_header(\"Interactive Portfolio Website\"),\n                             p(\"This portfolio was built using RStudio and Shiny.\"),\n                             p(\"Features include sidebar navigation, reactive content, and dynamic tab displays.\"),\n                             img(src = \"images/portfolio_screenshot.png\", height = \"250px\")\n                           )\n                 ),\n                 nav_panel(\"Design Projects\",\n                           uiOutput(\"design_projects_ui\")\n                 )\n               )\n             }\n           }\n    )\n  })\n\n  output$design_projects_ui &lt;- renderUI({\n    switch(design_view(),\n           \"summary\" = tagList(\n             card_header(\"Design Projects\"),\n             p(\"Explore various design-focused works below:\"),\n             br(),\n             fluidRow(\n               column(4, actionButton(\"go_to_marketing\", \"Marketing Projects\", class = \"btn btn-primary w-100\")),\n               column(4, actionButton(\"go_to_graphic\", \"Graphic Design\", class = \"btn btn-primary w-100\")),\n               column(4, actionButton(\"go_to_game\", \"Educational Game\", class = \"btn btn-primary w-100\"))\n             )\n           ),\n           \"marketing\" = card(\n             card_header(\"Marketing Projects\"),\n             p(\"Branding, social media, and graphic design work.\"),\n             img(src = \"images/brand_design.png\", height = \"250px\"),\n             br(), br(),\n             actionButton(\"back_to_design\", \"← Back\", class = \"btn btn-outline-secondary\")\n           ),\n           \"graphic design\" = card(\n             card_header(\"Graphic Design Works\"),\n             p(\"Used digital tools such as Adobe InDesign, Photoshop, and Canva to create engaging flyers and templates.\"),\n             img(src = \"images/krautrock.pdf\", height = \"250px\"),\n             br(), br(),\n             actionButton(\"back_to_design\", \"← Back\", class = \"btn btn-outline-secondary\")\n           ),\n           \"game\" = card(\n             card_header(\"Educational Board/Card Game\"),\n             p(\"Designed a team-based card game to teach cell biology to 8th grade students.\"),\n             tags$iframe(\n               src = \"www/showcase_1.pdf\",\n               style = \"height:600px; width:1200px; border:none;\"\n             ),\n             br(), br(),\n             actionButton(\"back_to_design\", \"← Back\", class = \"btn btn-outline-secondary\")\n           )\n    )\n  })\n}\n\nshinyApp(ui, server)\n\nShiny applications not supported in static R Markdown documents"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Hyouji Joo's Portfolio",
+    "section": "",
+    "text": "Coding Marketing Graphic Design Personal\n\n\n\n\nAbout | Home | Email | LinkedIn"
+  },
+  {
+    "objectID": "projects/coding.html",
+    "href": "projects/coding.html",
+    "title": "Hyouji Joo's Portfolio",
+    "section": "",
+    "text": "Interactive Portfolio Website\n\n\n\nBuilt a personal portfolio website using tools such as RStudio, shiny elements, as well as GitHub. The initial task involved planning out the “brand guide” for the website (color palette, fonts, etc.), overall structure and layout, as well as what qmd tools to utilize within the different sections of the website.\n\n\n\n\n    \n    \n        \n    \n\n\n\n Brand Guide Examples: \n\n  \n\n\n    \n    \n        \n    \n\n\n\n\n\n\nAnimal Crossing Data Dashboard\n\n\n\nBuilt a data dashboard using shiny tools to efficiently display data for collectible items/features/characters in the game Animal Crossing: New Horizons. The project aimed to explore different data visualization methods and to gain insight on how to properly manipulate different elements such as palettes, navigation bars, search bars, as well as other page components provided through shiny and Quarto.\n\nThis project is still a work in progress.\n\n\n\n    \n    \n        \n    \n\n\n\n\nData Set InformationVisualization plan\n\n\n\nThe data set utilized for this project is Animal Crossing New Horizons Catalog from Kaggle.\n\n\nThe following CSV files were used in the dashboard:\n\n\n\n\nClick to expand table of data fields\n\n\n\n\n\n\n\nField\n\n\n\n\nName\n\n\nVariation\n\n\nDIY\n\n\nBuy\n\n\nSell\n\n\nColor 1\n\n\nColor 2\n\n\nSize\n\n\nMiles Price\n\n\nSource\n\n\nSource Notes\n\n\nSeasonal Availability\n\n\nMannequin Piece\n\n\nVersion\n\n\nStyle\n\n\nLabel Themes\n\n\nType\n\n\nVillager Equippable\n\n\nCatalog\n\n\nFilename\n\n\nInternal ID\n\n\nUnique Entry ID\n\n\n\n\n\n\n\n\nFor this project, I plan to implement Shiny tools and concepts to create my data visualization tool.\n\n\nBefore creating my ui and server, I’ll sort the different collectible item categories into the following larger categories: wardrobe items, household items, tools, villagers, and other. Based on this categorization, the inital plan is to create an interactive dashboard that allows for the user to switch between different tabs that represent each of the larger categories, and from each tab they’re able to further look into specific items.\n\n\nIn addition, I plan to incorporate images for certain categories such as Villagers to better provide a visual image for the information displayed on the dashboard."
+  },
+  {
+    "objectID": "projects/coding.html#portfolio-website",
+    "href": "projects/coding.html#portfolio-website",
+    "title": "Coding Works",
+    "section": "",
+    "text": "Interactive Portfolio Website\nBuilt a personal portfolio website using tools such as RStudio, shiny elements, as well as GitHub. The initial task involved planning out the “brand guide” for the website (color palette, fonts, etc.), overall structure and layout, as well as what qmd tools to utilize within the different sections of the website.\nClick for more information:"
+  },
+  {
+    "objectID": "projects/coding.html#animal-crossing-dashboard",
+    "href": "projects/coding.html#animal-crossing-dashboard",
+    "title": "Coding Works",
+    "section": "Animal Crossing Dashboard",
+    "text": "Animal Crossing Dashboard\nAnimal Crossing Data Dashboard\nBuilt a data dashboard using shiny tools to efficiently display data for collectible items/features/characters in the game Animal Crossing: New Horizons.\nThe project aimed to explore different data visualization methods and to gain insight on how to properly manipulate different elements such as palettes, navigation bars, search bars, as well as other page components provided through shiny and Quarto."
+  },
+  {
+    "objectID": "projects/marketing.html",
+    "href": "projects/marketing.html",
+    "title": "Hyouji Joo's Portfolio",
+    "section": "",
+    "text": "ISBE Mark\n\nAnimal Records Evanston Marketing Strategy\n\n\n\nAs an ISBE Mark project manager for the Animal Records Evanston client, my team and I spent several weeks finalizing a set of deliverables that would serve to increase the record store’s visibility both in the local Evanston area and on social media platforms such as Instagram or Facebook.\n\nThis project is currently ongoing.\n\n\nDeliverable Prototype #1Deliverable Prototype #2Deliverable Prototype #3\n\n\n\n\n\nVideo Planning & Social Media Management\n\n\n\n\nAssignment: Video planning for in-store display & social media content ideas\n\n\nBasic Description: Planning out video content for in-store display promoting the record store and advertising the new basement expansion. The content should be replayed consistently throughout opening hours. Sound should not overlap with the store’s music, focusing more on visual information.\n\n\nSocial Media: Create video content ideas for Animal Record’s official Instagram page.\n\n\n\n\n\n\nGraphic Design & Social Media Management\n\n\n\n\nThe focuses of this deliverable were sticker redesign and social media content schedule. Because stickers are a great way to spread awareness of a store or brand, we decided that sticker designs that appeal to younger crowds are a cost-efficient way of increasing store awareness. Aligned with this focus on cost-efficiency, we also aimed to create a content posting schedule for the official Instagram page in order to making posting less overwhelming and easy to manage.\n\n\n\n\n\n\nEvent Planning, Marketing Research & Competitor Analysis\n\n\n\n\nAssignment: Vendor opportunity research & competitor analysis\n\n\nEvent Planning & Logistics: Research potential events for vinyl selling/purchasing at Norris or look for other vendor opportunities. Investigate room availability at Norris in late May/June and upcoming events where Animal Records could participate.\n\n\nMarketing Research & Competitor Analysis: Research local vinyl stores near Northwestern to identify key characteristics of each competitor."
+  },
+  {
+    "objectID": "projects/design.html",
+    "href": "projects/design.html",
+    "title": "Design Work",
+    "section": "",
+    "text": "Welcome! In this document, I will showcase various design projects, including poster designs, digital content. Below, you will find a collection of my work along with project descriptions."
+  },
+  {
+    "objectID": "projects/design.html#overview",
+    "href": "projects/design.html#overview",
+    "title": "Design Work",
+    "section": "Overview",
+    "text": "Overview\n\nAssignment: Educational Game Design for 8th Grade Biology Students\n\n\nClient: XYZ Company\n\n\nTools Used: Canva, Google Sheets\nAs part of our final project for Design of Learning Environments, our team spent several weeks planning out multiple prototypes for a physical game aimed at teaching 8th grade students cell biology, specifically cell organelles and functions.\n\n\nFinal Deliverables:\n\n\nGame learning outcomes\n\n\nLearning measurements - how we know learning occurred\n\n\nGame Mechanics\n\n\nPhysical Card Design\n\n\n\n\nDesign Process\n\n\nResearch & Concept Development:\n\n(Image or graphic of initial sketches or mood boards)\nExplored different educational subjects to determine the learning outcome our game will be centered around. Our team’s final learning outcome was the following:\nRefinement & Iteration:\n\nMultiple playthroughs led to the development of 3 prototypes for the game. Each prototype expanded on a different aspect of the learning outcome that we could achieve better through manipulating different design elements.\n\n\n\n\nShowcase #1\n\n\n\n\n\n\n\n\n\n\nShowcase #2\n\n\n\n\n\n\n\nFinal Design:\n\n\n:::"
+  },
+  {
+    "objectID": "projects/design.html#overview-1",
+    "href": "projects/design.html#overview-1",
+    "title": "Design Work",
+    "section": "Overview",
+    "text": "Overview\n\nAssignment: Design promotional graphics for digital and physical usage for promoting upcoming film events.\nClient: Block Cinema Program, guest filmmakers Tools Used: Adobe InDesign, Photoshop, Canva\n\n\n\nCard Design"
+  },
+  {
+    "objectID": "projects/design.html#overview-2",
+    "href": "projects/design.html#overview-2",
+    "title": "Design Work",
+    "section": "Overview",
+    "text": "Overview\n\nAssignment: Creating template designs for magazines that align with the magazine edition as well as article content. The following templates are from STITCH Fashion Magazine as well as Wavelength Magazine.\nTools Used: Adobe InDesign, Photoshop, Canva\n\n\n\nCard Design"
   }
 ]
